@@ -1,0 +1,11 @@
+We investigate the formation of accretion disks around the secondary in
+detached systems consisting of an Asymptotic Giant Branch (AGB) star and
+a compact accreting companion as a function of mass loss rate and
+orbital parameters. In particular, we study winds from late-type stars
+that are gravitationally focused by a companion in a wide binary system
+using hydrodynamical simulations. For a typical slow and massive wind
+from an evolved star there is a stream flow between the stars with
+accretion rates of a few percent of the mass loss from the primary. Mass
+transfer through a focused wind is an important mechanism for a broad
+range of interacting binary systems and can explain the formation of
+chemically peculiar stars.
