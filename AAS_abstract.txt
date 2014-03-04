@@ -1,15 +1,18 @@
+Investigating mass transfer in symbiotic systems with hydrodynamic simulations
+
 We investigate gravitationally focused wind accretion in binary systems
 consisting of an evolved star with a gaseous envelope and a compact accreting
 companion.  We study the mass accretion and formation of an accretion disk
 around the secondary caused by the strong wind from the primary late-type
-component using global 3D hydrodynamic numerical simulations.  In particular,
-the dependence on the mass accretion rate on the  mass loss rate, wind
-temperature and orbital parameters of the system is considered.  For a typical
-slow and massive wind from an evolved star there mass transfer through a
+component using global 2D and 3D hydrodynamic numerical simulations.  In
+particular, the dependence on the mass accretion rate on the  mass loss rate,
+wind temperature and orbital parameters of the system is considered.  For a
+typical slow and massive wind from an evolved star the mass transfer through a
 focused wind results in rapid infall onto the secondary. A stream flow is
-created between the stars with accretion rates of a few percent of the mass
+created between the stars with accretion rates of a 2-10% percent of the mass
 loss from the primary.  This mechanism could be an important method for
 explaining periodic modulations in the accretion rates for a broad range of
 interacting binary systems and fueling of a large population of X-ray binary
-systems.  We test the possibility of these accretion flows indicated by the
-simulations by comparing with observations of the Mira AB system.
+systems.  We test the plausibility of these accretion flows indicated by the
+simulations by comparing with observations of the symbiotic CH Cyg variable
+system.
