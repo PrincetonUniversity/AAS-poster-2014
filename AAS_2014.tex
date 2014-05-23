@@ -1,7 +1,6 @@
 \documentclass[blockbodyinnersep=1cm,titleinnersep=1cm,20pt]{tikzposter}
 \tikzposterlatexaffectionproofoff
 \usecolortheme{armin}
-\usepackage[version=3]{mhchem}
 \usepackage{siunitx}
 \usepackage{natbib}
 \usepackage{lmodern}
@@ -11,17 +10,8 @@
 \usepackage{aas_macros,hyperref,amsmath}
 \graphicspath{ {./figures/} }
 
-\DeclareSIUnit\kms{\kilo\meter\per\second}
-\DeclareSIUnit\mols{{molec.}\,s^{-1}}
-
 \begingroup
 \renewcommand{\section}[2]{}
-\newcommand{\herschel}{{\it Herschel}}
-\newcommand{\trans}{$1_{10}$--$1_{01}$}
-\newcommand{\rh}{r_\mathrm{h}}
-\newcommand{\xne}{x_{n_\mathrm{e}}}
-\newcommand{\upper}{\SI{<4e25}{\mols}}
-\newcommand{\col}{\SI{<3e10}{\per\cm\squared}}
 \newcommand{\flash}{\textsc{flash}}
 
 \defcitealias{2009ApJ...700.1148D}{Paper~I}
@@ -136,4 +126,3 @@ e.g.][]{2002ApJS..143..201C,2006MNRAS.370..529D}.
 \end{columns}
 
 \end{document}
-
