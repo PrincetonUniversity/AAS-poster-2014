@@ -9,7 +9,9 @@
 \usepackage{caption}
 \usepackage{wrapfig}
 \usepackage{aas_macros,hyperref,amsmath}
-\graphicspath{ {./figures/} }
+\graphicspath{
+  {/home/mdevalbo/FLASH/FLASH2.5/runs/mira-isot-della4/}
+  {./figures/} }
 
 \begingroup
 \renewcommand{\section}[2]{}
@@ -112,8 +114,43 @@ e.g.][]{2002ApJS..143..201C,2006MNRAS.370..529D}.
 \column{0.5}
 
 % First column - third block
-\block{Data analysis}{
+\block{Wind accretion}{
+\begin{wrapfigure}{r}{0.6\textwidth}
+  \centering
+  \includegraphics[width=.6\colwidth]{chcyg_2D_hdf5_plt_cnt_0101.png}
+  \caption*{Orbital plane density contours in logarithmic scale for a
+    simulation of CH~Cyg after an orbital period.  The system has a separation
+    of \SI{10}{AU} and a mass ratio $q=3.3$.}
+\end{wrapfigure}
+We integrate the equations of hydrodynamics until the density distribution of
+the gravitationally focused wind reaches a quasi-stationary state.
+The stellar wind produced by the AGB star is
+deflected towards the secondary within the orbital plane, and the
+relaxed density distributions present Keplerian accretion disks of various
+sizes.
+A tidal stream is observed in our simulations for a wide range of binary
+separations Using an isothermal equation of state.  The formation of a stream
+flow is dependent on the wind velocity and temperature at the dust formation
+radius which determines the velocity at the secondary's position.
 
+\begin{wrapfigure}{l}{0.6\textwidth}
+  \centering
+  \includegraphics[width=.6\colwidth]{chcyg_2D_hdf5_plt_cnt_0050.png}
+  \caption*{Base resolution with 5 additional levels of refinement
+    after 0.5 orbits corresponding to a cell size of \SI{5e-3}{AU} close to the
+  accretor.}
+\end{wrapfigure}
+Our simulations were run on a grid with
+uniform radial spacing in our base grid
+and 5 additional levels of refinement.
+The computational grid was centered on the AGB star in the rotating
+reference frame of the binary system.
+The numerical method changes the accuracy of the solution by modifying the
+spacing of the grid points in certain regions while the system is evolved.
+A diagram of the grid geometry and boundaries is shown in the figure on the
+left.
+The AMR algorithm places high resolution
+grid patches only at the regions where time-dependent shocks are formed.
 }
 
 \block[width=\colwidth]{References}{
