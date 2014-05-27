@@ -16,6 +16,7 @@
 \begingroup
 \renewcommand{\section}[2]{}
 \newcommand{\flash}{\textsc{flash}}
+\DeclareSIUnit\year{yr}
 
 \defcitealias{2009ApJ...700.1148D}{Paper~I}
 
@@ -71,7 +72,7 @@ symbiotic variable system CH Cyg.
 Symbiotic binaries are unique astrophysical laboratories for studies
 of wind accretion because of the wide separation of the components, and
 the ability to study the individual components and the accretion
-processes at many wavelengths ranging from X-ray to radio
+processes from multiwavelength studies from X-ray to radio
 \citep{1997ApJ...482L.175K,2005ApJ...623L.137K,2006ApJ...637L..49M}.  A
 typical symbiotic consists of a mass-losing AGB or a red giant star and
 a hot accreting companion, often a white dwarf (WD).  The components in
@@ -117,7 +118,7 @@ e.g.][]{2002ApJS..143..201C,2006MNRAS.370..529D}.
 \column{0.5}
 
 % First column - third block
-\block{Wind accretion}{
+\block{Wind accretion in CH~Cyg}{
 \begin{wrapfigure}{r}{0.6\textwidth}
   \centering
   \includegraphics[width=.6\colwidth]{chcyg_2D_hdf5_plt_cnt_0101.png}
@@ -126,8 +127,14 @@ e.g.][]{2002ApJS..143..201C,2006MNRAS.370..529D}.
     of \SI{10}{AU} and a mass ratio $q=3.3$.}
 \end{wrapfigure}
 We integrate the equations of hydrodynamics until the density distribution of
-the gravitationally focused wind reaches a quasi-stationary state.  The stellar
-wind produced by the AGB star is deflected towards the secondary within the
+the gravitationally focused wind reaches a quasi-stationary state.  The
+adopted orbital parameters correspond to the symbiotic binary CH~Cyg:
+$M_1=2M_\odot$,
+$M_2=0.6M_\odot$ and
+$P = \SI{15.6}{\year}$
+\citep[][and references therein]{2009MNRAS.397..325P}.
+The stellar
+wind produced by the donor star is deflected towards the secondary within the
 orbital plane, and the relaxed density distributions present Keplerian
 accretion disks of various sizes.  A tidal stream is observed in our
 simulations for a wide range of binary separations Using an isothermal equation
@@ -144,7 +151,7 @@ secondary's position.
 \end{wrapfigure}
 Our simulations were run on a grid with uniform radial spacing in our base grid
 and 5 additional levels of refinement.  The computational grid was centered on
-the AGB star in the rotating reference frame of the binary system.  The
+the giant star in the rotating reference frame of the binary system.  The
 numerical method changes the accuracy of the solution by modifying the spacing
 of the grid points in certain regions while the system is evolved.  A diagram
 of the grid geometry and boundaries is shown in the figure on the left.  The
