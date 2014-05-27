@@ -97,15 +97,13 @@ where $\rho$ is the density in the orbital plane, $\mathbf{v}$ the
 velocity of the fluid, $p$ the pressure and $\Phi$ the gravitational
 potential.
 
-Our code is based on the \flash{} code \citep{2000ApJS..131..273F},
-which is a fully parallel block-structured Adaptive Mesh Refinement
-(AMR) implementation of the Piecewise Parabolic Method
-\citep[PPM;][]{1984JCoPh..54..115W,1984JCoPh..54..174C} in its original
-Eulerian form\footnote{The source code is available at
-\url{http://www.flash.uchicago.edu/}}.
-The code has been extensively tested in various compressible flow
-problems with astrophysical applications \citep[see
-e.g.][]{2002ApJS..143..201C,2006MNRAS.370..529D}.
+Our code is based on the \flash{} code \citep{2000ApJS..131..273F}, which is a
+fully parallel block-structured Adaptive Mesh Refinement (AMR) implementation
+of the Piecewise Parabolic Method \citep[PPM;][]{1984JCoPh..54..115W} in its
+original Eulerian form\footnote{The source code is available at
+\url{http://www.flash.uchicago.edu/}}.  The code has been extensively tested in
+various compressible flow problems with astrophysical applications \citep[see
+e.g.][]{2006MNRAS.370..529D}.
 }
 
 \block{Results}{
@@ -165,18 +163,19 @@ secondary's position.
 
 \begin{wrapfigure}{l}{0.6\textwidth}
   \centering
-  \includegraphics[width=.6\colwidth]{chcyg_2D_hdf5_plt_cnt_0050.png}
-  \caption*{Base resolution with 5 additional levels of refinement
-    after 0.5 orbits corresponding to a cell size of \SI{5e-3}{AU} close to the
-  accretor.}
+  \includegraphics[width=.6\colwidth]{proj_1orb_obs2008ds9C.jpeg}
+  \caption*{
+  HST image of CH Cyg acquired in 2008 \citep{2010ApJ...710L.132K}
+  and the projected simulation taking into account the inclination
+  with respect to the line of sight.
+}
 \end{wrapfigure}
 Our simulations were run on a grid with uniform radial spacing in our base grid
 and 5 additional levels of refinement.  The computational grid was centered on
 the giant star in the rotating reference frame of the binary system.  The
 numerical method changes the accuracy of the solution by modifying the spacing
-of the grid points in certain regions while the system is evolved.  A diagram
-of the grid geometry and boundaries is shown in the figure on the left.  The
-AMR algorithm places high resolution grid patches only at the regions where
+of the grid points in certain regions while the system is evolved.
+The AMR algorithm places high resolution grid patches only at the regions where
 time-dependent shocks are formed.
 }
 
