@@ -1,7 +1,7 @@
 % vim: set spell spelllang=en_us:
 \documentclass[blockbodyinnersep=1cm,titleinnersep=1cm]{tikzposter}
 \tikzposterlatexaffectionproofoff
-\usecolortheme{armin}
+\usecolortheme{edgar}
 \usepackage{siunitx}
 \usepackage{natbib}
 \usepackage{lmodern}
@@ -37,7 +37,7 @@
 \begin{document}
 
  % Title block
-\titleblock[left fig=/home/mdevalbo/Princeton/identity/cfa-logo_146.jpg,
+\titleblock[left fig=/home/mdevalbo/Princeton/identity/cfa-logo_146_alpha.png,
 	    left fig height=7cm,
 	    right fig=/home/mdevalbo/Princeton/identity/Princeton_shield.pdf,
 	    right fig height=7cm,
@@ -101,8 +101,7 @@ fully parallel block-structured Adaptive Mesh Refinement (AMR) implementation
 of the Piecewise Parabolic Method (PPM) in its original Eulerian
 form\footnote{The source code is available at
 \url{http://www.flash.uchicago.edu/}}.  The code has been extensively tested in
-various compressible flow problems with astrophysical applications \citep[see
-e.g.][]{2006MNRAS.370..529D}.
+various compressible flow problems with astrophysical applications.
 }
 
 \block{Results}{
@@ -113,23 +112,18 @@ surface.  We have considered simulations with a locally isothermal equation of
 state.  The results of this work and a comparison of the models with
 observations of the symbiotic binary CH Cyg are summarized below:
 \begin{itemize}
-  \item The dynamics of wind accretion in this system show a complex dynamical
-    caused by the presence of a companion.
-  \item A bow shock and a tail structure is formed at the position of the
-secondary due to the supersonic orbital motion.
-  \item Mass transfer through a focused wind leads to a stream flow onto the
-WD with relative accretion rates of a 2-10\% percent of the mass loss
-from the primary.
-  \item This mechanism could explain the jets detected in HST and Chandra
-images of CH Cyg \citep{2010ApJ...710L.132K}.
+  \item The focused wind accretion in this system show a complex dynamics
+    that proceeds beyond the accreting companion.
+  \item A bow shock and a spiral-like tail structure forms near the position
+    of the secondary and on the farther side from the primary  due to the
+    supersonic orbital motion.
+  \item Mass transfer through a focused wind leads to a stream flow onto the WD
+    with variable accretion rates of a $\sim$ 5\% percent of the mass loss
+    from the primary.
+  \item This mechanism could explain the morphology of the outflows detected in
+    the HST and Chandra images of CH Cyg at much larger scales
+    \citep{2010ApJ...710L.132K}.
 \end{itemize}
-}
-
-\block{Acknowledgments}{
-We acknowledge partial support from grants NSF AST-1108686 and NASA
-NNX12AH91H.  The numerical code used in this work is based on the \flash{} code
-that is in part developed by the DOE NNSA-ASC OASCR Flash Center at the
-University of Chicago.
 }
 
  % Set second column
@@ -183,6 +177,13 @@ in the right panel with a field of view of approximately $45 \times 30$ AU.
 There is a strikingly similar morphology of the accretion outflow on the
 companion and beyond with that of the observed outflow structure at much larger
 scales.}
+
+\block{Acknowledgments}{
+We acknowledge partial support from grants NSF AST-1108686 and NASA
+NNX12AH91H.  The numerical code used in this work is based on the \flash{} code
+that is in part developed by the DOE NNSA-ASC OASCR Flash Center at the
+University of Chicago.
+}
 
 \block[width=\colwidth]{References}{
 \bibliographystyle{aa}
