@@ -52,12 +52,12 @@ consisting of an evolved star with a gaseous envelope and a compact
 accreting companion.  We study the mass accretion and formation of an
 accretion disk around the secondary caused by the strong wind from the
 primary late-type component using global 2D and 3D hydrodynamic
-numerical simulations.  In particular, the dependence on the mass
-accretion rate on the  mass loss rate, wind temperature and orbital
+numerical simulations.  In particular, the dependence of the mass
+accretion rate on the mass loss rate, wind temperature and orbital
 parameters of the system is considered.  For a typical slow and massive
 wind from an evolved star the mass transfer through a focused wind
 results in rapid infall onto the secondary. A stream flow is created
-between the stars with accretion rates of a 2-10\% percent of the mass
+between the stars with accretion rates of a 2--10\% percent of the mass
 loss from the primary.  This mechanism could be an important method for
 explaining periodic modulations in the accretion rates for a broad range
 of interacting binary systems and fueling of a large population of X-ray
@@ -105,13 +105,12 @@ of the Piecewise Parabolic Method (PPM) in its original Eulerian
 form\footnote{The source code is available at
 \url{http://www.flash.uchicago.edu/}}.  The code has been extensively tested in
 various compressible flow problems with astrophysical applications.  A
-realistic 3D hydrodynamical simulation of the interaction of the wind from a
+realistic 3D hydrodynamical simulations of the interaction of the wind from a
 giant star with a companion using the spherical coordinates version of the code
-is under progress. The computational domain spans about one radian around the
+is in progress. The computational domain spans about one radian around the
 orbital plane of the system centered on the primary to cover the whole region
-of interest close to the accretor. The resolution per separation in the 3D
-simulations is about a factor of two smaller than in the 2D simulations and
-leads to the relative damping of the bow shock and spiral structures.
+of interest close to the accretor. The spatial resolution per separation in the
+3D simulations is about a factor of two smaller than in the 2D simulations.
 }
 
 \block{Results}{
@@ -124,17 +123,17 @@ simulations with a locally isothermal equation of state.  The results of this
 work and a comparison of the models with observations of the symbiotic binary
 CH Cyg are summarized below:
 \begin{itemize}
-  \item The focused wind accretion in this system show a complex dynamics
-    that proceeds beyond the accreting companion.
+  \item The focused wind accretion in this system shows a complex dynamics,
+    resulting in a powerful flow beyond the accreting companion.
   \item A bow shock and a spiral-like tail structure forms near the position
     of the secondary and on the farther side from the primary  due to the
     supersonic orbital motion.
   \item Mass transfer through a focused wind leads to a stream flow onto the WD
-    with variable accretion rates of a $\sim$ 5\% percent of the mass loss
+    with variable accretion rates of 2--10\% percent of the mass loss
     from the primary.
   \item This mechanism could explain the morphology of the outflows detected in
     the HST and Chandra images of CH Cyg at much larger scales
-    \citep{2010ApJ...710L.132K}.
+    \citep[e.g.,][]{2010ApJ...710L.132K}.
 \end{itemize}
 }
 
@@ -145,6 +144,7 @@ CH Cyg are summarized below:
 \block{Wind accretion in CH~Cygni}{
 \begin{wraptable}{l}{0.4\textwidth}
 \centering
+tion*{CH Cyg system}
 \begin{tabular}{ccc}
   \toprule
   Parameter & Value \\
@@ -179,8 +179,8 @@ secondary's position.  Our simulations were run on a grid with uniform radial
 spacing in our base grid and 5 additional levels of refinement.  The
 computational grid was centered on the giant star in the rotating reference
 frame of the binary system.  The numerical method changes the accuracy of the
-solution by modifying the spacing of the grid points in certain regions while
-the system is evolved.  The AMR algorithm places high resolution grid patches
+solution by modifying the spacing of the grid points in certain regions
+as a function of time.  The AMR algorithm places high resolution grid patches
 only at the regions where time-dependent shocks are formed.
 
 \begin{wrapfigure}{l}{0.6\textwidth}
@@ -204,10 +204,9 @@ scales.}
 
 \block{Acknowledgments}{
 Based on observations made with the NASA/Chandra and NASA/ESA HST (obtained
-at the STScI, which is operated by the AURA, Inc.).  We acknowledge partial
-support from grants NSF AST-1108686 and NASA NNX12AH91H.  The numerical code
-used in this work is based on the \flash{} code that is in part developed by
-the DOE NNSA-ASC OASCR Flash Center at the University of Chicago.
+at the STScI, which is operated by the AURA, Inc.).  The numerical code used in
+this work is based on the \flash{} code that is in part developed by the DOE
+NNSA-ASC OASCR Flash Center at the University of Chicago.
 }
 
 \block[width=\colwidth]{References}{
